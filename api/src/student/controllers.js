@@ -44,8 +44,24 @@ const addStudent = async (req, res) => {
   });
 };
 
+const removeStudent = async (req, res) => {
+  const { id } = req.params;
+
+  pool.query(queries.getStudentById, [id], (error, results) => {
+    const noStudentFound = !results.rows.length;
+    if (noStudentFound) {
+      return res.send("Student does not exist in the database");
+    }
+    pool.query(queries.getStudentById, [id], (error, results) => {
+      if (error) throw error;
+      res.send("Student removed successfully!");
+    });
+  });
+};
+
 module.exports = {
   getStudents,
   getStudentById,
   addStudent,
+  removeStudent,
 };
