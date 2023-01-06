@@ -1,0 +1,126 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "rest_api_nodePostgreSQL",
+  "dateExported": "2023-01-06T20:31:42.227Z",
+  "version": "1.1",
+  "folders": [],
+  "requests": [
+    {
+      "_id": "f370b6a3-caf3-4323-a590-eb5f706dc85f",
+      "colId": "6ca97595-cd51-4ba9-aa6d-1a7e3df01f8a",
+      "containerId": "",
+      "name": "addStudent",
+      "url": "http://localhost:3001/api/v1/students/",
+      "method": "POST",
+      "sortNum": 10000,
+      "created": "2023-01-06T20:30:51.588Z",
+      "modified": "2023-01-06T20:30:51.588Z",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)",
+          "isDisabled": true
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"name\": \"Santillán\",\n    \"email\": \"rubensan@gmail.com\",\n    \"age\": 45,\n    \"dob\": \"2010-04-10\"\n  }",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "2fa373c7-3d24-4fcf-bd62-d075e406b709",
+      "colId": "6ca97595-cd51-4ba9-aa6d-1a7e3df01f8a",
+      "containerId": "",
+      "name": "addStudent",
+      "url": "http://localhost:3001/api/v1/students/",
+      "method": "POST",
+      "sortNum": 20000,
+      "created": "2023-01-06T20:31:03.707Z",
+      "modified": "2023-01-06T20:31:03.707Z",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)",
+          "isDisabled": true
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"name\": \"Santillán\",\n    \"email\": \"rubensan@gmail.com\",\n    \"age\": 45,\n    \"dob\": \"2010-04-10\"\n  }",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "dd9fbb8c-836d-42f1-82e7-d0447ffaa1fb",
+      "colId": "6ca97595-cd51-4ba9-aa6d-1a7e3df01f8a",
+      "containerId": "",
+      "name": "updateStudent",
+      "url": "http://localhost:3001/api/v1/students/1",
+      "method": "PUT",
+      "sortNum": 30000,
+      "created": "2023-01-06T20:31:09.426Z",
+      "modified": "2023-01-06T20:31:09.426Z",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "Thunder Client (https://www.thunderclient.com)",
+          "isDisabled": true
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"name\": \"Santillán\"\n  }",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "e386c148-8aa3-4723-927f-bc5caafd18aa",
+      "colId": "6ca97595-cd51-4ba9-aa6d-1a7e3df01f8a",
+      "containerId": "",
+      "name": "getStudentById",
+      "url": "http://localhost:3001/api/v1/students/5",
+      "method": "GET",
+      "sortNum": 40000,
+      "created": "2023-01-06T20:31:15.818Z",
+      "modified": "2023-01-06T20:31:15.818Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "3d9960d9-9433-4bef-8915-ecc19f32aa2f",
+      "colId": "6ca97595-cd51-4ba9-aa6d-1a7e3df01f8a",
+      "containerId": "",
+      "name": "removeStudent",
+      "url": "http://localhost:3001/api/v1/students/15",
+      "method": "DELETE",
+      "sortNum": 50000,
+      "created": "2023-01-06T20:31:21.626Z",
+      "modified": "2023-01-06T20:31:21.626Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "db1b3e81-5473-4a14-9be6-d5c8478c6cbc",
+      "colId": "6ca97595-cd51-4ba9-aa6d-1a7e3df01f8a",
+      "containerId": "",
+      "name": "getStudents",
+      "url": "http://localhost:3001/api/v1/students",
+      "method": "GET",
+      "sortNum": 60000,
+      "created": "2023-01-06T20:31:26.514Z",
+      "modified": "2023-01-06T20:31:26.514Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    }
+  ]
+}
